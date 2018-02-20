@@ -6,10 +6,10 @@ package ch.heigvd.res.lab00;
 public class IInstrument {
 
     private int soundVolume = 0;
-    private String color = "white";
+    private String color = "";
 
     public String play() {
-        return "hello";
+        return "";
     }
 
     public int getSoundVolume() {
