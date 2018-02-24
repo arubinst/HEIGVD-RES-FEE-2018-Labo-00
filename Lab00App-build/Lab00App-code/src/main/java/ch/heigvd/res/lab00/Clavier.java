@@ -11,8 +11,6 @@ package ch.heigvd.res.lab00;
  */
 public class Clavier extends IInstrument{
     
-//    String color;
-    
     public Clavier(){
         sound = "dayyyn";
         soundVolume = 2;
