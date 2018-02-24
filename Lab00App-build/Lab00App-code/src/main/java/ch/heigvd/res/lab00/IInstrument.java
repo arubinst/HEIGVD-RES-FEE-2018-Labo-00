@@ -13,6 +13,7 @@ abstract class IInstrument {
     String sound;
     int soundVolume;
     String color;
+    
     abstract String play();
     
     int getSoundVolume(){

@@ -10,6 +10,7 @@ package ch.heigvd.res.lab00;
  * @author migue
  */
 public class Trumpet extends IInstrument {
+    
     public Trumpet(){
         sound = "pouet";
         color = "golden";

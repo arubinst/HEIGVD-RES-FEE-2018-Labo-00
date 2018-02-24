@@ -15,7 +15,8 @@ public class Harmonica extends IInstrument{
         sound = "dap dap";
     }
     
-    String play(){
+    @Override
+    public String play(){
         return sound;
     }
     

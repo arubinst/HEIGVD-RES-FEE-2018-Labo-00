@@ -11,7 +11,7 @@ package ch.heigvd.res.lab00;
  */
 public class Clavier extends IInstrument{
     
-    String color;
+//    String color;
     
     public Clavier(){
         sound = "dayyyn";
@@ -19,14 +19,17 @@ public class Clavier extends IInstrument{
         color = "ivory";
     }
     
+    @Override
     String play(){
         return sound;
     }
     
+    @Override
     int getSoundVolume(){
         return soundVolume;
     }
     
+    @Override
     String getColor(){
         return color;
     }
