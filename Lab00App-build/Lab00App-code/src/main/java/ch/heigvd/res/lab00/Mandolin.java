@@ -12,24 +12,28 @@ package ch.heigvd.res.lab00;
  * 
  * @author Olivier Liechti
  */
-public class Application{
+public class Mandolin implements IInstrument{
+  // Variables privés de la classe Mandolin
+  private int vol = 5;
+  private String color = "wood";
+  private String sound = "pick";
 
-  private String message;
+  // Constructeur par défaut
+  public Mandolin(){}
 
-  public Application() {
-    this("HEIG-VD rocks!");
+  // Pour les override => CF interface IInstrument
+  @Override
+  public int getSoundVolume() {
+    return vol;
   }
 
-  public Application(String message) {
-    this.message = message;
+  @Override
+  public String getColor() {
+    return color;
   }
 
-  public String getMessage() {
-    return message;
+  @Override
+  public String play() {
+    return sound;
   }
-
-  public int add(int a, int b) {
-    return a + b;
-  }
-
 }
