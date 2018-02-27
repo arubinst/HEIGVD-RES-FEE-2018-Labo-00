@@ -1,51 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package ch.heigvd.res.lab00;
 
-public class Flute implements IInstrument {
-
-    /*
-    Membres privés
-     */
-    private String sound;
-    private int volume;
-    private String color;
-
-    /*
-    Getters
-     */
+/**
+ *
+ * @author migue
+ */
+public class Flute extends IInstrument{
+    
+    public Flute(){
+        soundVolume = 1;
+        sound = "";
+    }
+    
     @Override
-    public String play() {
+    public String play(){
         return sound;
     }
-
+    
     @Override
-    public String getColor() {
-        return color;
-    }
-
-    @Override
-    public int getSoundVolume() {
-        return volume;
-    }
-
-    /*
-    Setters
-     */
-    public void setSound(String sound) {
-        this.sound = sound;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    /*
-    Constructeur
-     */
-    public Flute() {
-       this.volume = 35;
+    public int getSoundVolume(){
+        return soundVolume;
     }
 }

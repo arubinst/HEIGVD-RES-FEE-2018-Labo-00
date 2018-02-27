@@ -1,37 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package ch.heigvd.res.lab00;
 
-public class Clavier implements IInstrument {
-
-    /*
-    Membres privés
-     */
-    private String color;
-    private int clavierVolume;
-    private String sound;
-
-    /*
-    Constructeur
-     */
-    public Clavier() {
-        this.sound = "dayyyn";
-        this.color = "ivory";
-        this.clavierVolume = 67;
+/**
+ *
+ * @author migue
+ */
+public class Clavier extends IInstrument{
+    
+    public Clavier(){
+        sound = "dayyyn";
+        soundVolume = 2;
+        color = "ivory";
     }
-
-    /*
-    Méthodes publiques
-     */
+    
     @Override
-    public String play() {
+    String play(){
         return sound;
     }
-
+    
     @Override
-    public int getSoundVolume() {
-        return clavierVolume;
+    int getSoundVolume(){
+        return soundVolume;
     }
-
-    public String getColor() {
+    
+    @Override
+    String getColor(){
         return color;
     }
+    
 }

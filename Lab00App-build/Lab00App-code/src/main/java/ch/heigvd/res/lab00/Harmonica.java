@@ -1,37 +1,22 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package ch.heigvd.res.lab00;
 
-public class Harmonica implements IInstrument {
-
-    /*
-    Membres privés
-     */
-    private String sound;
-    private int volume;
-    private String color;
-
-    /*
-    Constructeur
-     */
-
-    public Harmonica() {
-        this.sound = "dap dap";
+/**
+ *
+ * @author migue
+ */
+public class Harmonica extends IInstrument{
+    
+    public Harmonica(){
+        sound = "dap dap";
     }
-
-    /*
-    Méthodes publiques
-     */
+    
     @Override
-    public String play() {
+    public String play(){
         return sound;
-    }
-
-    @Override
-    public int getSoundVolume() {
-        return volume;
-    }
-
-    @Override
-    public String getColor() {
-        return color;
     }
 }
