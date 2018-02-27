@@ -19,5 +19,4 @@ public class Harmonica extends IInstrument{
     public String play(){
         return sound;
     }
-    
 }

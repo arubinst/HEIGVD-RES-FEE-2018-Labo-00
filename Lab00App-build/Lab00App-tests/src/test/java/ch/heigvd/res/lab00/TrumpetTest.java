@@ -14,7 +14,7 @@ import org.junit.Test;
  * @author Olivier Liechti
  */
 public class TrumpetTest {
- 
+
   @Test
   public void thereShouldBeAnIInstrumentInterfaceAndATrumpetClass() {
     IInstrument trumpet = new Trumpet();

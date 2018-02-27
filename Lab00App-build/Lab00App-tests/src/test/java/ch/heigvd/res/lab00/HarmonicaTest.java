@@ -13,8 +13,6 @@ public class HarmonicaTest {
     String sound = harmonica.play();
     Assert.assertEquals("dap dap", sound);
   }
-  
 
- 
 }
 
