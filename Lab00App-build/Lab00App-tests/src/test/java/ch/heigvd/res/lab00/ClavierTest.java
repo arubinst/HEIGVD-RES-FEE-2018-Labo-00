@@ -4,14 +4,12 @@ import org.junit.Assert;
 import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
-import javax.sound.midi.Instrument;
-
 /**
  * @author Abass MAHDAVI
  */
 
 
-public class ClavierTest extends Clavier {
+public class ClavierTest {
   @Test
   public void thereShouldBeAClavierClass() {
     IInstrument clavier = new Clavier();
